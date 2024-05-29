@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link rel="stylesheet" href="landing.css">
+    <title> Starbucks Landing Page</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo (1).png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a>
+                <li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee<br>It's <span>Starbucks</span></h2>
+                <p>
+                    Starbucks coffee is renowned for its high-quality, ethically sourced beans and diverse range of
+                    blends and roasts. The company sources its coffee from the top 3% of coffee beans available,
+                    primarily from Latin America, Africa, and Asia-Pacific regions. Starbucks is committed to ethical
+                    sourcing practices, working closely with farmers through its Coffee and Farmer Equity (C.A.F.E.)
+                    Practices to ensure fair trade and sustainable farming methods. The brand offers a variety of coffee
+                    options, including whole bean, ground, and instant coffee, along with espresso-based drinks like
+                    lattes, cappuccinos, and macchiatos. Their signature blends, such as Pike Place Roast and the bold
+                    Italian Roast, cater to different flavor preferences. Starbucks continually innovates with seasonal
+                    and limited-edition blends, such as the popular Pumpkin Spice Latte. In addition to hot coffee, they
+                    provide cold brew, nitro cold brew, and iced coffee, expanding their appeal to a broader audience.
+                    Through meticulous attention to quality and ethical practices, Starbucks has become a global coffee
+                    leader, shaping coffee culture worldwide.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook (1).png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram (1).png"></a></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    </div>
+</body>
+
+</html>
